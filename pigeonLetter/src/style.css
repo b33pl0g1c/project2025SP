@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#a0eafc, #fff);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.mulish- {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.scene {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.pigeon {
+  width: 120px;
+  position: relative;
+  top: 100px;
+  left: 140px;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.letter {
+  width: 60px;
+  position: relative;
+  top: 160px;
+  left: 170px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.letter:hover {
+  transform: scale(1.1);
+}
+
+.open-letter {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  width: 280px;
+  height: 180px;
+  background: #fff;
+  border: 2px solid #d6336c;
+  border-radius: 10px;
+  display: none;
+  z-index: 3;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.message {
+  font-size: 18px;
+  color: #d6336c;
+  text-align: center;
+  line-height: 1.5;
+}

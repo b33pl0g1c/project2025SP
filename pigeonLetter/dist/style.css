@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#a0eafc, #fff);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Edu NSW ACT Cursive', sans-serif;
+  font-size: smaller;
+}
+/* .mulish- {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.scene {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.pigeon {
+  width: 120px;
+  position: relative;
+  top: 100px;
+  left: 140px;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.letter {
+  width: 60px;
+  position: relative;
+  top: 160px;
+  left: 170px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.letter:hover {
+  transform: scale(1.1);
+}
+
+        .open-letter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 500px;
+            height: auto; /* Let height adjust to content */
+            max-height: 80vh; /* Add a max height */
+            overflow-y: auto; /* Add scroll if content is too long */
+            background: #fff;
+            border: 2px solid #d6336c;
+            border-radius: 10px;
+            display: none; /* Initially hidden */
+            z-index: 3;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            font-size: 18px;
+            color: #2f370e;
+            text-align: left; /* Changed to left for better readability */
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #d6336c;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+            color: #333;
+        }        
